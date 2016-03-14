@@ -30,6 +30,10 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	
 }
+
+.main-nav{
+	padding:0;
+}
 h2{
 	font-size:1em;
 	color:#9fa8a3;
@@ -42,7 +46,19 @@ h2,h3{
 p{
 	text-align: center;
 	font-family: 'Lato', sans-serif;
+
 }
+
+.info{
+	max-width:400px;
+}
+
+a:link,a:visited{
+		text-decoration: none;
+		color:#fff;
+
+}
+
 .about-p{
 	color:#9fa8a3;
 }
@@ -51,7 +67,6 @@ p{
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
-	max-width:200px;
 	padding-top: 30px;
 	border-bottom:2px solid #9fa8a3;
 }
@@ -71,7 +86,7 @@ p{
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
-	max-width:250px;
+	
 }
 .contact{
 	padding-top: 30px;
@@ -87,6 +102,9 @@ p{
 	color:#9fa8a3;
 
 	
+}
+.top{
+	float: right;
 }
 
 .links{
@@ -104,6 +122,7 @@ p{
 	
 	.about-p{
 		font-size: 1.1em;
+		
 	}
 	.container{
 		display:table;
@@ -131,13 +150,16 @@ p{
 		margin:0 auto;
 
 	}
+
 	.box-1,.box-3,.box-5{
 		width:50%;
 		float:left;
+		
 	}
 	.box-2,.box-4,.box-6{
 		width:50%;
 		float:right;
+
 	}
 	.top{
 		visibility:hidden;
