@@ -1,0 +1,29 @@
+// descriptive color variables
+
+$white     		:#fff;
+$navy      		:#4871A7;
+$light-grey     :#9fa8a3;
+
+//functional color variables
+
+$color-prim		: $navy;
+$color-sec		: $white;
+
+$text-light		: $white;
+$text-dark		: $navy;
+$text-medium    : $light-grey;
+
+//Font stacks
+
+$stack-open-sans :'Open Sans', sans-serif;
+$stack-lato      : 'Lato', sans-serif;
+
+//Font size
+
+$font-small		:1em;
+$font-big		:1.1em;
+
+//Media query breakpoints
+
+$brk-narrow 	:  768px;
+$brk-wide   	:  1024px;

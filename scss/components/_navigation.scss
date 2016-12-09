@@ -1,0 +1,47 @@
+
+.main-header {
+	@include desktop{
+      display: inline-block;
+     background-color: $color-prim;
+	position:fixed;
+	top:0;
+      width: 100%;
+      }
+    }
+
+ .name-1 {
+ 	@include desktop {
+      float: left;
+      text-align: left;
+      margin-left: 30px;
+      }
+    }
+
+.main-nav{
+	padding:0;
+	@include desktop {
+		float: right;
+      	position: relative;
+	}
+
+	 li{
+	text-align: center;
+	list-style: none;
+	font-size: $font-small;
+	color:#fff;
+	margin-top:6px;
+	margin-bottom: 6px;
+	font-family: 'Open Sans', sans-serif;
+
+	@include mobile{
+		display:inline;
+		margin-right: 25px;
+		font-size: $font-big;
+	}
+	@include desktop{
+		float: left;
+	}
+	
+  }
+}
+

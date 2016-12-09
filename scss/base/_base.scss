@@ -1,0 +1,69 @@
+
+	
+body{
+	background-color: $color-prim;
+
+@include desktop{
+	padding-top: 70px;
+
+}
+	
+}
+
+.clearfix::after{
+
+@include mobile{
+  content:"";
+  display:table;
+  clear:both;
+  }
+}
+
+h2{
+	font-size:$font-small;
+	color:$text-dark;
+}
+h2,h3{
+	@extend %centered;
+	font-family: $stack-open-sans;
+}
+
+p{
+	@extend %centered;
+	font-family: $stack-lato;
+
+}
+
+.info{
+	max-width:400px;
+}
+
+a:link,a:visited {
+	text-decoration: none;
+	color:$text-light;
+
+}
+.profile-photo {
+	@include desktop{
+		max-width: 300px;
+	}
+}
+
+.about-p {
+	color:$text-light;
+
+	@include mobile{
+		font-size: $font-big;
+		width:50%;
+		float:left;
+	}
+}
+
+
+.about-me{
+	color:$text-light;
+	@extend %padding_b;
+}
+
+
+

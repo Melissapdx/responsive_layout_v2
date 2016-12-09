@@ -1,0 +1,83 @@
+
+.profile {
+	@extend %padding_b;
+
+@include mobile {
+		width:50%;
+		float:right;
+		
+		}
+	}
+
+.portfolio,.contact,.primary {
+	@include mobile {
+		max-width:700px;
+		margin:0 auto;
+
+	}
+	@include desktop{
+		width:90%;
+		max-width: 1300px;
+	}
+
+}
+
+.container{
+
+	@include mobile {
+		display:table;
+		margin:0 auto;
+
+	}
+
+	@include desktop {
+	 	margin: 0;
+      	width: 90%;
+
+	}
+
+}
+.box-1,.box-3,.box-5 {
+
+	@include mobile {
+		width:50%;
+		float:left;
+		}
+
+	}
+
+	.box-2,.box-4,.box-6 {
+	@include mobile {
+		width:50%;
+		float:right;
+		}
+
+	}
+.box-1,.box-2,.box-3 {
+	@include desktop{
+			width:33%;
+			float:left;
+			}
+		} 
+
+.box-4,.box-5,.box-6 {
+	@include desktop {
+			width:33%;
+			float:left;
+			}
+		}
+
+.portfolio{
+	background-color: $color-sec;
+	padding-top: 20px;
+	@extend %padding_b;
+	color:$text-medium;
+	border:1px solid #c5d5cb;
+
+}
+
+.contact{
+	padding-top: 30px;
+	@extend %padding_b;
+	color:$text-light;
+}
